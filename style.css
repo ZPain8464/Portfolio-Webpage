@@ -9,56 +9,118 @@
 
 @import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
 
-body {
-  background-color: #5f5345;
+/* -------- Structure --------*/
+
+body{
+  margin: 0;
+  background-color: #F8F9F8;
 }
- 
-.pageContainer {
-  width: 940px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  background-color: #fff;
+
+header {
+  height: 140px;
+  background-color: #EAF4F4;
 }
- 
-.imageContainer {
-  float: left;
-  width: 620px;
+
+footer {
+  height: 84px;
+  background-color: #EAF4F4
 }
- 
-.textContainer {
-  float: left;
-  width: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
+
+.wrapper{
+  width: 580px;
+  margin: auto;
 }
 
 img {
-  width: 100%;
+  width: 100%
 }
- 
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 64px;
-  color: #8b1b00;
+
+/*------- Logo ---------*/
+
+header h1{
+  font-family:Arial, Helvetica, sans-serif;
+  color:slategray;
+  margin: 0px;
+  font-size: 48px;
+  text-align: center;
 }
- 
-p, li {
-  font-family: 'Lato', sans-serif;
+
+header h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: slategrey;
+  margin: 0px;
+  padding-top: 16px;
   font-size: 22px;
-  color: #51473b;
+  text-align: center;
 }
 
+/* ---------- Body Content ----------- */
 
-
-
-/* ---- Advanced ---- */
-/* This tag is a bit advanced for this lesson,  
-   but is needed to wrap the pageContainer 
-   around any sized content that is floated within it. */
-
-.pageContainer:after { 
-  content: " ";
-  display: table;
-  clear: both;
+h1, h2 {
+  color: #495057;
+  font-family: Arial;
 }
- 
+
+h1 { font-size: 38px;}
+h2 { font-size: 30px}
+
+p, li {
+  font-family: Arial;
+  color: #495057;
+  font-size: 20px;
+  font-weight:400;
+   line-height: 26px;
+}
+
+a {
+  font-height: 700;
+  text-decoration: none;
+}
+
+a:link { color:cornflowerblue; }
+a:visited {color:darkorchid; }
+a:hover { color:cadetblue; }
+a:active { color:cadetblue; }
+
+a:hover { text-decoration: underline; }
+
+footer p {
+  color: slategray;
+  text-align: center;
+}
+
+footer a:link { color:cornflowerblue; }
+footer a:visited {color:darkorchid; }
+footer a:hover { color:cadetblue; }
+footer a:active { color:cadetblue; }
+
+/* --------- Elements ---------*/
+img, iframe { border-radius: 8px; }
+
+iframe { border: 1px solid #403933; }
+
+hr { border: .5px solid #403933; }
+
+/* ------- Portfolio Section -----------*/ 
+.portfolio-item h3 {
+  text-align: center;
+}
+
+/* --------- Spacers ---------*/
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
