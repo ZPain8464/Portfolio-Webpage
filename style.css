@@ -1,126 +1,196 @@
 
-/* 
-	STYLE.CSS:
-	One stylesheet to rule them all.
-	
-	selector { property:value }
-	
-*/
+/* General CSS Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&family=Montserrat:wght@300;700&family=Nanum+Pen+Script&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
-
-/* -------- Structure --------*/
-
-body{
-  margin: 0;
-  background-color: #F8F9F8;
-}
-
-header {
-  height: 140px;
-  background-color: #EAF4F4;
-}
-
-footer {
-  height: 84px;
-  background-color: #EAF4F4
-}
-
-.wrapper{
-  width: 580px;
-  margin: auto;
+body {
+  margin: 0px;
+  font-family: Arial;
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
-/*------- Logo ---------*/
-
-header h1{
-  font-family:Arial, Helvetica, sans-serif;
-  color:slategray;
-  margin: 0px;
-  font-size: 48px;
-  text-align: center;
+img.rounded {
+  border-radius: 8px;
 }
 
-header h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: slategrey;
-  margin: 0px;
-  padding-top: 16px;
+main h2 {
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+main h3 {
   font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+main p {
+  font-family: sans-serif;
+ line-height: 1.9em;
+ margin-bottom: 0em;
+}
+
+main a {
+  font-family: sans-serif;
+  line-height: 1.9em;
+}
+
+a:link { color: #2B2D42; }
+a:visited { color: purple; }
+a:hover { color: #197278; }
+a:active { color: #197278; }
+
+
+/* Header */
+
+header {
+  background-color: #EDF2F4;
+  margin-bottom: 40px;
+  display: block;
+}
+
+header h1 {
+  color: #2B2D42;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  font-weight: 100;
 }
 
-/* ---------- Body Content ----------- */
-
-h1, h2 {
-  color: #495057;
-  font-family: Arial;
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-h1 { font-size: 38px;}
-h2 { font-size: 30px}
-
-p, li {
-  font-family: Arial;
-  color: #495057;
-  font-size: 20px;
-  font-weight:400;
-   line-height: 26px;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  padding-bottom: 0;
 }
 
-a {
-  font-height: 700;
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #2B2D42;
   text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a:link { color:cornflowerblue; }
-a:visited {color:darkorchid; }
-a:hover { color:cadetblue; }
-a:active { color:cadetblue; }
-
-a:hover { text-decoration: underline; }
-
-footer p {
-  color: slategray;
-  text-align: center;
+header nav ul li a:hover {
+  color: #197278;
 }
 
-footer a:link { color:cornflowerblue; }
-footer a:visited {color:darkorchid; }
-footer a:hover { color:cadetblue; }
-footer a:active { color:cadetblue; }
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
 
-/* --------- Elements ---------*/
-img, iframe { border-radius: 8px; }
-
-iframe { border: 1px solid #403933; }
-
-hr { border: .5px solid #403933; }
-
-/* ------- Portfolio Section -----------*/ 
-.portfolio-item h3 {
-  text-align: center;
+  header h1 {
+    margin: 14px 0 14px 14px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
 }
 
-/* --------- Spacers ---------*/
-.gap-sm {
-    height: 50px;
-    width: auto;
-}
-.gap-md {
-    height: 100px;
-    width: auto;
-}
-.gap-lg {
-    height: 200px;
-    width: auto;
+/* Main */
+
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
 }
 
-.gap-footer {
-    height: 10px;
-    width: auto;
+main .intro {
+  font-size: 24px;
+  color: #6b655b;
+}
+
+/* Groups and Items (Mobile First) */
+
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups and Items (Desktop) */
+
+@media all and (min-width 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* Articles and whatnot */ 
+
+#home #portfolio #contact {
+  margin-bottom: 120px;
+}
+
+/* The About Article section */ 
+
+#about {
+  background-color: #EDF2F4;
+  padding: 20px 0 30px 0;
+  margin: 120px 0;
+}
+
+/* My Google Map iframe */
+
+iframe {
+  width: 100%;
+  height: 250px;
+}
+
+/* Contact Form */ 
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
