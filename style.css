@@ -168,6 +168,10 @@ main .intro {
   margin-bottom: 120px;
 }
 
+#portfolio h2{
+  text-align: right;
+}
+
 #home {
   margin-top: 50px;;
 }
