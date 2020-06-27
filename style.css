@@ -54,7 +54,6 @@ a:active { color: #197278; }
 /* Header */
 
 header {
-  /* background-color: #EDF2F4; */
   background-color: #457B9D;
   margin-bottom: 40px;
   display: block;
@@ -150,10 +149,11 @@ main .intro {
 
 /* Groups and Items (Desktop) */
 
-@media all and (min-width: 800px) {
+@media screen and (min-width: 800px) {
   .wrapper {
     width: 80%;
     margin: auto;
+    border: 5px solid black;
   }
 
   .group {
