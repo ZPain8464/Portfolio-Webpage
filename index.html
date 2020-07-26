@@ -2,7 +2,11 @@
 <html>
 <head>
 
-<title>Zachary Painter: Software Developer</title>
+<title>Zachary Painter</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Notable&display=swap" rel="stylesheet">
@@ -13,9 +17,9 @@
 <body>
 
 <header> 
-  <h1>Zachary Painter</h1>
+  <h1 class="nav-name">Zachary Painter</h1>
   <nav>
-    <ul>
+    <ul class="main-menu">
       <li><a href="#home">home</a></li>
       <li><a href="#about">about</a></li>
       <li><a href="#portfolio">portfolio</a></li>
@@ -26,16 +30,16 @@
 
 <main>
   <div class="wrapper">
+    <article id="home">
     <div class="group">
       <div class="item">
-        <article id="home">
-    <img src="images/siege-painter-zach.jpg" class="rounded" alt="Zach Painter's profile photo" class="header-image">
+    <img id="profile-pic" src="images/siege-painter-zach.jpg" class="rounded" class="header-image" alt="Zach Painter's profile photo">
     </div>
 
     <div class="item">
     <h2 class="intro">Hi, I'm Zach!</h2>
-    <p>I'm a software developer based in Austin, TX.</a> I love to make my own sites and I'm currently working on learning more JS frameworks.</p>
-    <p>Please reach out to me if you'd like to get in touch! You can find my contact info below.</p>
+    <p>I'm a <strong>Web Developer</strong> based in Austin, TX. I enjoy building apps and collaborating on new projects. Oh, and 
+    I love music!</p>
     </div>
     </div>
   </article>
@@ -43,20 +47,11 @@
 
   <article id="about">
     <div class="wrapper">
-    <h2>About Me</h2>
+    <h2 class="about-me">About Me</h2>
     <div class="group">
       <div class="item-double">
-    <p>I love to code, but I also have an extensive background working in editorial as a content marketing specialist. It kinda goes without saying that I enjoy reading and writing, but I also love music and running.</p>
-
-    <p>Care to join me on my next half marathon? That's ok if you don't! Anyway, please feel free to contact me for any of the following:</p>
-    <ul class="about">
-      <li>Coding a site from scratch</li>
-      <li>Creating SEO-friendly content for your website</li>
-      <li>Collaborating on a future project</li>
-    </ul>
-    </div>
-    <div class="item">
-    <img src="images/zach-running.jpg" class="rounded" alt="Zach and two friends after a half mararthon race">
+    <p>I have a background in editorial and content marketing, but I'm learning to code.</p>
+    <p>As a programmer, I'm comfortable with HTML, CSS, and Javascript.</p>
     </div>
     </div>
     </div>
@@ -65,44 +60,21 @@
     <div class="wrapper">
     <article id="portfolio">
       <h2>Portfolio</h2>
-      <div class="group">
         <div class="item">
       
-      <h3>Quiz App</h3>
-      <p>This is a quiz app that I'm working on.</p>
-      <p>Skills used: HTML, JS, JQuery, and CSS</p>
-      <p><a href="#">GitHub Repo</a></p>
-      <p><a href="#">Live app link</a></p>
-      <img src="images/green-fields.jpg" alt="Zach's rock-n-roll quiz" class="rounded">
+      <h3><strong>Rock-n-Roll Quiz App</strong></h3>
+      <img class="rockRoll" src="images/rock-quiz-image.jpg" alt="Zach's rock-n-roll quiz" class="rounded">
+      <p>This is an interactive quiz app I made about rock-n-roll's most iconic bands.</p>
+      <div class="icon">
+      <i class="devicon-javascript-plain"></i>
+      <i class="devicon-jquery-plain colored"></i>
+      <i class="devicon-html5-plain colored"></i>
+      <i class="devicon-css3-plain colored"></i>
       </div>
 
-      <div class="item">
-      <h3>Bookmark App</h3>
-      <p>This is a bookmark app that I'm working on.</p>
-      <p>Skills used: HTML, JS, JQuery, and CSS</p>
-      <p><a href="#">GitHub Repo</a></p>
-      <p><a href="#">Live app link</a></p>
-      <img src="images/green-fields.jpg" alt="nice rocks" class="rounded">
-      </div>
-      </div>
-
-      <div class="group">
-      <div class="item">
-      <h3>Pet Appointment App</h3>
-      <p>This is a pet appointment app that I'm working on.</p>
-      <p>Skills used: HTML, JS, JQuery, and CSS</p>
-      <p><a href="#">GitHub Repo</a></p>
-      <p><a href="#">Live app link</a></p>
-      <img src="images/green-fields.jpg" alt="nice rocks" class="rounded">
-      </div>
-
-      <div class="item">
-      <h3>Team Project App</h3>
-      <p>This is my team project app that I'm working on.</p>
-      <p>Skills used: HTML, JS, JQuery, and CSS</p>
-      <p><a href="#">GitHub Repo</a></p>
-      <p><a href="#">Live app link</a></p>
-      <img src="images/green-fields.jpg" alt="nice rocks" class="rounded">
+      <div class="project-links">
+      <p><a href="https://github.com/ZPain8464/rock-quiz">Repo</a></p>
+      <p><a href="https://zpain8464.github.io/rock-quiz/">Live link</a></p>
       </div>
       </div>
     </article>
@@ -111,27 +83,26 @@
       <hr>
       <h2>Contact Me</h2>
       <div class="group">
-        <div class="item">
+        <div class="form-item">
           <form action="https://formspree.io/z.painter45@gmail.com" method="POST">
-          <label for="user-name">Name</label>
+          <label class="user-name" for="user-name">Name:</label>
           <input id="user-name" type="text" name="name">
 
-          <label for="user-email">Email:</label>
+          <label class="user-email" for="user-email">Email:</label>
           <input id="user-email" type="text" name="email">
 
-          <label for="user-message">Message</label>
+          <label class="user-message" for="user-message">Message:</label>
           <textarea id="user-message" name="message"></textarea>
-          <button type="submit">Submit</button>
+          <button id="submit" type="submit">Submit</button>
           </form>
         </div>
-        <div class="item">
-
+      <div class="item">
       <p>Phone Number: (737) 202-6625</p>
       <p>Email: z.painter45@gmail.com</p>
       <p><a href="https://github.com/ZPain8464">Zach's GitHub Profile</a></p>
       <p><a href="https://www.linkedin.com/in/zachary-painter-392709106/">Zach's LinkedIn Account</a></p>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13778.136965607084!2d-97.73573236518281!3d30.307318358597264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca710dd9e5b5%3A0x526d78512aa5b73c!2sHyde%20Park%2C%20Austin%2C%20TX!5e0!3m2!1sen!2sus!4v1590874214946!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13778.136965607084!2d-97.73573236518281!3d30.307318358597264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644ca710dd9e5b5%3A0x526d78512aa5b73c!2sHyde%20Park%2C%20Austin%2C%20TX!5e0!3m2!1sen!2sus!4v1590874214946!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         </div>
       </article>
@@ -142,9 +113,9 @@
       </footer>
       </main>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
       </body>
 
     
     </html>
-        
-    
