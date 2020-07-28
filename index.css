@@ -60,8 +60,8 @@
     color: #197278;
   }
 
-  a:link { color: white; }
-  a:visited { color: #ffd670; }
+  a:link { color: #ffd670; }
+  a:visited { color: #2B2D42; }
   a:hover { color: #197278; }
   a:active { color: #197278; }
 
